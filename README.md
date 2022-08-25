@@ -13,3 +13,17 @@ Then get your userinfo from the "@userinfobot" bot and deliver it to the Oscar t
 For more information about making a robot, use the following site :
 
 https://flowxo.com/how-to-create-a-bot-for-telegram-short-and-simple-guide-for-beginners/
+
+# Install In Linux
+
+$ git clone https://github.com/Arash-abraham/Oscar.git
+$ cd Oscar
+$ pip install -r requirements.txt
+$ python3 Ocar.py
+
+# Install In Windows
+
+$ git clone https://github.com/Arash-abraham/Oscar.git
+$ cd Oscar
+$ python -m pip install -r requirements.txt
+$ python Ocar.py
