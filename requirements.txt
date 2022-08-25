@@ -1,0 +1,4 @@
+colorama
+ctypes
+requests
+pynput
