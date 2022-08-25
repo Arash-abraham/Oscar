@@ -16,11 +16,10 @@ https://flowxo.com/how-to-create-a-bot-for-telegram-short-and-simple-guide-for-b
 
 # Install In Linux
 
-$ git clone https://github.com/Arash-abraham/Oscar.git
-$ cd Oscar
-$ pip install -r requirements.txt
-
-$ python3 Ocar.py
+* $ git clone https://github.com/Arash-abraham/Oscar.git
+* $ cd Oscar
+* $ pip install -r requirements.txt
+* $ python3 Ocar.py
 
 # Install In Windows
 
