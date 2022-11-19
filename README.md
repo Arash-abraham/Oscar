@@ -26,4 +26,5 @@ https://flowxo.com/how-to-create-a-bot-for-telegram-short-and-simple-guide-for-b
 * $ git clone https://github.com/Arash-abraham/Oscar.git
 * $ cd Oscar
 * $ python -m pip install -r requirements.txt
-* $ python Ocar.py
+* $ python Oscar.py
+
