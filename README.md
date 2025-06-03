@@ -26,7 +26,7 @@ A powerful tool to generate a customizable keylogger payload for Windows. It cap
 ## Installation ⚙️
 1.  **Clone the repository**:
     ```bash
-    git clone [https://github.com/Arash-abraham/Oscar.git](https://github.com/Arash-abraham/Oscar.git)
+    git clone https://github.com/Arash-abraham/Oscar.git
     cd Oscar
     ```
 2.  **Install Python dependencies**:
