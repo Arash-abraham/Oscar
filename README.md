@@ -69,7 +69,7 @@ A powerful tool to generate a customizable keylogger payload for Windows. It cap
 
 ---
 ## Project Structure 📁
-  Oscar/
+    Oscar/
     ├── CPP-Payload/
     │   └── keylog.cpp          # C++ code for keylogging
     ├── icon/
@@ -83,6 +83,7 @@ A powerful tool to generate a customizable keylogger payload for Windows. It cap
     ├── Oscar.py                # Main Python script
     ├── README.md               # Project README file
     └── requirements.txt        # Python dependencies
+    
 ---
 ## Contributing 🤝
 To contribute to the project:
