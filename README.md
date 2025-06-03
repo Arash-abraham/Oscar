@@ -3,7 +3,7 @@
 
 A powerful tool to generate a customizable keylogger payload for Windows. It captures keystrokes and sends them discreetly to your Telegram bot.
 
-> **⚠️ Warning**: This tool is for educational purposes or authorized security testing only. Unauthorized keylogging is illegal and unethical.
+> **Warning**: This tool is for educational purposes or authorized security testing only. Unauthorized keylogging is illegal and unethical.
 
 ---
 ## Features 🔥
