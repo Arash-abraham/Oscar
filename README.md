@@ -85,27 +85,6 @@ A powerful tool to generate a customizable keylogger payload for Windows. It cap
     └── requirements.txt        # Python dependencies
     
 ---
-## Contributing 🤝
-To contribute to the project:
-1.  **Fork the repository**:
-    ```bash
-    git fork [https://github.com/Arash-abraham/Oscar.git](https://github.com/Arash-abraham/Oscar.git)
-    ```
-2.  **Create a feature branch**:
-    ```bash
-    git checkout -b feature/your-feature
-    ```
-3.  **Commit your changes**:
-    ```bash
-    git commit -m "Add your feature"
-    ```
-4.  **Push to your branch**:
-    ```bash
-    git push origin feature/your-feature
-    ```
-5.  **Open a Pull Request on GitHub**.
-
----
 ## Security and Ethics ⚠️
 * **Use only with explicit permission**: This tool should only be used within legal frameworks and with full authorization.
 * **Never expose your Telegram Bot Token**: Your bot token is confidential and should not be shared.
@@ -134,5 +113,5 @@ This project is released under the MIT License. See `LICENSE` for details.
 
 ---
 ## Contact 📧
-Arash Abraham
+arashebi777@gmail.com
 Hack away!
