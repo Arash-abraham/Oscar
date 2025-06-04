@@ -102,16 +102,6 @@ A powerful tool to generate a customizable keylogger payload for Windows. It cap
     * Double-check your Bot Token and Chat ID for accuracy.
 
 ---
-## Roadmap 🗺️
-* **Add Linux support with X11 keylogging**.
-* **Implement log encryption**.
-* **Add a Graphical User Interface (GUI) for configuration**.
-
----
-## License 📄
-This project is released under the MIT License. See `LICENSE` for details.
-
----
 ## Contact 📧
 arashebi777@gmail.com
 Hack away!
