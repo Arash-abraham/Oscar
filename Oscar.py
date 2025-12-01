@@ -1,5 +1,4 @@
 #!/usr/local/bin/python3
-# To do
 import os
 import platform
 from colorama import *
