@@ -1,5 +1,5 @@
 ---
-## Oscar Keylogger 🕵️‍♂️
+## Oscar Keylogger
  
 A powerful tool to generate a customizable keylogger payload for Windows. It captures keystrokes and sends them discreetly to your Telegram bot.
 
