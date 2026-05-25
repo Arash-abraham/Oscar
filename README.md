@@ -14,7 +14,7 @@ When I started this project, the Moon Knight series had just come out, featuring
 
 And if you want to know the vibe when this code was written:
 
-![Moon Knight GIF](https://tenor.com/zh-CN/view/moon-knight-disney-marvel-the-peared-one-the-hell-in-freddys-gif-4950838174379431837)
+![Moon Knight GIF](https://tenor.com/th/view/moon-knight-marvel-studios-marvel-disney-plus-disney-gif-24774310)
 
 ---
 
