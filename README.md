@@ -14,7 +14,7 @@ When I started this project, the Moon Knight series had just come out, featuring
 
 And if you want to know the vibe when this code was written:
 
-<video src="https://i.imgur.com/uAcYBFj.mp4" autoplay loop muted playsinline></video>
+[Watch Moon Knight GIF (click)](https://i.imgur.com/uAcYBFj.mp4)
 
 ---
 
