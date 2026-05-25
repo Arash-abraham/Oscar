@@ -14,8 +14,6 @@ When I started this project, the Moon Knight series had just come out, featuring
 
 And if you want to know the vibe when this code was written:
 
-![Oscar Isaac as Moon Knight](https://lumiere-a.akamaihd.net/v1/images/moonknight_oscarisaac_mr_knight_34e1f5d1.jpeg)
-
 ---
 
 ## Features
