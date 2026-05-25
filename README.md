@@ -1,4 +1,3 @@
-"""
 # Oscar Keylogger
 
 > **Project status:** Inactive for about 1-2 years – will be revived and updated soon.
@@ -15,7 +14,7 @@ When I started this project, the Moon Knight series had just come out, featuring
 
 And if you want to know the vibe when this code was written:
 
-https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif
+https://i.imgur.com/uAcYBFj.mp4
 
 (Search "Moon Knight gif" if the link doesn't work.)
 
@@ -139,4 +138,4 @@ arashebi777@gmail.com
 ---
 
 *Hack away.*
-"""
+
