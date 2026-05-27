@@ -19,7 +19,7 @@
 
 # Oscar
 
-Oscar is an old personal cybersecurity project originally started around **1401** — back when AI assistants weren't writing code, auto-completing architecture, or explaining bugs in seconds.
+Oscar is an old personal cybersecurity project originally started around **2022** — back when AI assistants weren't writing code, auto-completing architecture, or explaining bugs in seconds.
 
 Everything here was built through:
 - trial and error
