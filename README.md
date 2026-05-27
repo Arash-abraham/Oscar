@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/platform-Windows-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/language-Python%20%2B%20C++-orange?style=for-the-badge">
   <img src="https://img.shields.io/badge/status-Archived-yellow?style=for-the-badge">
-  <img src="https://img.shields.io/badge/origin-1401-darkred?style=for-the-badge">
+  <img src="https://img.shields.io/badge/origin-2022-darkred?style=for-the-badge">
 </p>
 
 <p align="center">
