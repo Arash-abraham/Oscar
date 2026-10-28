@@ -1,8 +1,16 @@
 # OSCAR
 
-\<p align="center">   \<strong>A Modular Framework for Security Research\</strong>   \<br />   \<sub>Built for experimentation. Designed for extensibility.\</sub> \</p>
+<p align="center">
+  <strong>A Modular Framework for Security Research</strong>
+  <br />
+  <sub>Built for experimentation. Designed for extensibility.</sub>
+</p>
 
-\<p align="center">   \<img src="[https://img.shields.io/badge/status-in%20development-orange?style=flat-square](https://img.shields.io/badge/status-in%20development-orange?style=flat-square)" alt="Project status: In development" />   \<img src="[https://img.shields.io/badge/platform-Windows-blue?style=flat-square](https://img.shields.io/badge/platform-Windows-blue?style=flat-square)" alt="Platform: Windows" />   \<img src="[https://img.shields.io/badge/language-Python%20%7C%20C%20%7C%20C%2B%2B-lightgrey?style=flat-square](https://img.shields.io/badge/language-Python%20%7C%20C%20%7C%20C%2B%2B-lightgrey?style=flat-square)" alt="Languages: Python, C, C++" />   \<img src="[https://img.shields.io/badge/license-not%20specified-lightgrey?style=flat-square](https://img.shields.io/badge/license-not%20specified-lightgrey?style=flat-square)" alt="License not specified" /> \</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-In_Development-orange?style=flat-square" alt="Status: In Development" />
+  <img src="https://img.shields.io/badge/Platform-Windows-blue?style=flat-square" alt="Platform: Windows" />
+  <img src="https://img.shields.io/badge/Languages-Python%20%7C%20C%20%7C%20C%2B%2B-lightgrey?style=flat-square" alt="Languages: Python, C, C++" />
+</p>
 
 ---
 
