@@ -1,5 +1,5 @@
  <p align="center">
-  <img src="https://images.openai.com/static-rsc-4/PPGxuJA5Zq_60aXEMUk83lVsiXEnK_CeE4qSO_Ya-CCkduMMS_bMKfdwBJhDvdz4HioMDQVB7MHrFJ-Xp7Yctq8-aje_3LhX8irSoCW0qq-zOiqtpG0bA3ylfUive74R36vDdo8c_jsW46urBu2FWrF_kIq2AdDL2DDcT5OShd1cozGYbzqsXYF8-JjSgl2B?purpose=fullsize" width="850" alt="Oscar project banner" />
+  <img src="/images/Oscar_ Dark Eclipse Techscape.png" width="850" alt="Oscar project banner" />
 </p>
 
 <h1 align="center">OSCAR</h1>
