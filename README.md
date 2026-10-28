@@ -1,4 +1,8 @@
-# OSCAR
+ <p align="center">
+  <img src="https://images.openai.com/static-rsc-4/PPGxuJA5Zq_60aXEMUk83lVsiXEnK_CeE4qSO_Ya-CCkduMMS_bMKfdwBJhDvdz4HioMDQVB7MHrFJ-Xp7Yctq8-aje_3LhX8irSoCW0qq-zOiqtpG0bA3ylfUive74R36vDdo8c_jsW46urBu2FWrF_kIq2AdDL2DDcT5OShd1cozGYbzqsXYF8-JjSgl2B?purpose=fullsize" width="850" alt="Oscar project banner" />
+</p>
+
+<h1 align="center">OSCAR</h1>
 
 <p align="center">
   <strong>A Modular Framework for Security Research</strong>
@@ -10,6 +14,10 @@
   <img src="https://img.shields.io/badge/Status-In_Development-orange?style=flat-square" alt="Status: In Development" />
   <img src="https://img.shields.io/badge/Platform-Windows-blue?style=flat-square" alt="Platform: Windows" />
   <img src="https://img.shields.io/badge/Languages-Python%20%7C%20C%20%7C%20C%2B%2B-lightgrey?style=flat-square" alt="Languages: Python, C, C++" />
+</p>
+
+<p align="center">
+  <em>“There's chaos in you.”</em>
 </p>
 
 ---
@@ -26,13 +34,13 @@ The long-term goal is to make the project easier to understand, maintain, test, 
 
 Oscar is a work in progress. Its original implementation and the newer modular architecture should be considered separate stages of development.
 
-| Component                  | Status                    |
-| -------------------------- | ------------------------- |
-| Original Python interface  | Legacy implementation     |
+| Component | Status |
+| --- | --- |
+| Original Python interface | Legacy implementation |
 | Windows-focused components | Present in the repository |
-| Modular architecture       | In progress               |
-| Cross-platform support     | Planned                   |
-| Automated testing          | To be established         |
+| Modular architecture | In progress |
+| Cross-platform support | Planned |
+| Automated testing | To be established |
 
 > Feature availability should be verified against the current source code before each release.
 
@@ -117,6 +125,6 @@ The name **Oscar** was inspired by Oscar Isaac and the era in which the project 
 
 ---
 
-\<p align="center">
-&#x20; \<sub>Made for learning, experimentation, and responsible security research.\</sub>
-\</p>
+<p align="center">
+  <sub>Made for learning, experimentation, and responsible security research.</sub>
+</p>
