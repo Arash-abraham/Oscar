@@ -1,244 +1,114 @@
-<p align="center">
-  <img src="https://i.imgur.com/uAcYBFj.gif" width="850">
-</p>
+# OSCAR
 
-<h1 align="center">🎯 Oscar</h1>
+\<p align="center">   \<strong>A Modular Framework for Security Research\</strong>   \<br />   \<sub>Built for experimentation. Designed for extensibility.\</sub> \</p>
 
-<p align="center">
-  <b>Modular Payload Generation Framework</b>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/status-Under%20Development-yellow?style=for-the-badge">
-  <img src="https://img.shields.io/badge/platform-Windows-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/language-C%20%7C%20C++%20%7C%20Assembly-orange?style=for-the-badge">
-  <img src="https://img.shields.io/badge/origin-2022-darkred?style=for-the-badge">
-</p>
-
-<p align="center">
-  <i>"There's chaos in you."</i>
-</p>
+\<p align="center">   \<img src="[https://img.shields.io/badge/status-in%20development-orange?style=flat-square](https://img.shields.io/badge/status-in%20development-orange?style=flat-square)" alt="Project status: In development" />   \<img src="[https://img.shields.io/badge/platform-Windows-blue?style=flat-square](https://img.shields.io/badge/platform-Windows-blue?style=flat-square)" alt="Platform: Windows" />   \<img src="[https://img.shields.io/badge/language-Python%20%7C%20C%20%7C%20C%2B%2B-lightgrey?style=flat-square](https://img.shields.io/badge/language-Python%20%7C%20C%20%7C%20C%2B%2B-lightgrey?style=flat-square)" alt="Languages: Python, C, C++" />   \<img src="[https://img.shields.io/badge/license-not%20specified-lightgrey?style=flat-square](https://img.shields.io/badge/license-not%20specified-lightgrey?style=flat-square)" alt="License not specified" /> \</p>
 
 ---
 
-# ⚠️ Disclaimer
+## Overview
 
-This repository exists strictly for:
-- educational purposes
-- malware analysis research
-- authorized security testing
+**Oscar** is an evolving, Python-based project exploring modular software architecture and security research tooling.
 
-Unauthorized monitoring, logging, or access to systems you do not own or have explicit permission to test is illegal and unethical.
+Originally started in 2022 as a small Windows-focused experiment, Oscar is being reworked toward a more extensible design, with a clear separation between its interface, configuration, and implementation modules.
 
-The author assumes no responsibility for misuse or damages caused by this project.
+The long-term goal is to make the project easier to understand, maintain, test, and extend.
 
----
+## Project Status
 
-# 📌 What is Oscar?
+Oscar is a work in progress. Its original implementation and the newer modular architecture should be considered separate stages of development.
 
-**Oscar** is a payload generation framework that started in 2022 as a simple Windows keylogger builder. The project was originally built during a time when AI assistants weren't writing code, auto-completing architecture, or explaining bugs in seconds. Everything here was built through trial and error, documentation digging, broken builds, random Stack Overflow threads, and long nights staring at terminal windows.
+| Component                  | Status                    |
+| -------------------------- | ------------------------- |
+| Original Python interface  | Legacy implementation     |
+| Windows-focused components | Present in the repository |
+| Modular architecture       | In progress               |
+| Cross-platform support     | Planned                   |
+| Automated testing          | To be established         |
 
-**Python is only the interface layer** — the actual payloads are written in C, C++, and Assembly for better performance, lower overhead, and more control over system resources.
+> Feature availability should be verified against the current source code before each release.
 
-### The Original Vision
-The original version worked like this:
-- User runs `Oscar.py`
-- Enters payload name, Bot Token, and Chat ID
-- Selects a deceptive icon (Excel, PDF, Word, VLC, etc.)
-- Oscar automatically generates a `.exe` file
-- No commands, no manual compilation — just simple prompts
+## Design Goals
 
-### The New Vision
-Oscar is now being rewritten and expanded to become a **modular framework** that supports:
-- **Multiple payloads**: Keylogger, Reverse Shell, Info Stealer, and more
-- **Multiple languages**: C, C++, Assembly, Python, Bash, and any language users want to add
-- **Multiple platforms**: Windows, Linux, macOS
-- **Custom payload addition**: Users can add their own payloads easily
+- **Modularity** — Keep components independent and easier to maintain.
+- **Extensibility** — Make future integrations straightforward.
+- **Clarity** — Prefer readable code and explicit configuration.
+- **Reliability** — Add validation, error handling, and automated tests.
+- **Responsible research** — Keep development and testing within authorized environments.
 
----
+## Repository Layout
 
-# 🚧 Current Status
-
-> Oscar is currently under active development. The original builder still works, while the new modular system is being built.
-
-| Component | Status | Description |
-|-----------|--------|-------------|
-| Original Builder (Oscar.py) | ✅ Working | The classic interface that started it all |
-| Windows Keylogger (C++) | ✅ Complete | High-performance keylogger with Telegram support |
-| Windows Keylogger (C) | ✅ Complete | Lightweight C implementation |
-| Windows Keylogger (Assembly) | ✅ Complete | Low-level implementation for maximum control |
-| Linux Support | 🚧 Planned | Expanding beyond Windows |
-| Reverse Shell Payload | 🚧 Planned | Cross-platform reverse shell |
-| Modular Builder | 🚧 In Progress | New architecture for multiple payloads |
-| Custom Payload Support | 📝 Planned | Users add their own payloads |
-
----
-
-# 📁 Project Structure
-
-```
+```text
 Oscar/
-│
-├── Oscar.py                         # Python interface (original builder - working)
-│
-├── Payloads/                        # All payloads organized by platform
-│   ├── windows/
-│   │   ├── keylogger/               # Windows Keylogger
-│   │   │   ├── Assembly/
-│   │   │   │   └── keylog.asm       # Assembly implementation
-│   │   │   ├── C/
-│   │   │   │   └── keylog.c         # C implementation
-│   │   │   └── C++/
-│   │   │       └── keylog.cpp       # C++ implementation
-│   │   └── reverse_shell/           # Coming soon
-│   ├── linux/
-│   │   └── reverse_shell/           # Coming soon
-│   └── mac-os/
-│       └── todo/                    # Coming soon
-│
-├── icon/                            # Deceptive icons for Windows
-│   ├── excel.ico
-│   ├── pdf.ico
-│   ├── word.ico
-│   ├── vlc.ico
-│   ├── powerpoint.ico
-│   ├── Counter-Strike.ico
-│   ├── Adobe-After-Effects.ico
-│   ├── Adobe-Photoshop.ico
-│   └── Anti-Virus.ico
-│
-├── modules/                         # Helper modules
-│   ├── banner.py
-│   └── gnt.py
-│
-├── builder/                         # New modular builder (in progress)
-│   └── payload_selector.py
-│
-├── config/                          # Payload registry (in progress)
-│   └── payloads_config.json
-│
+├── Oscar.py
+├── Payloads/
+├── modules/
+├── builder/
+├── config/
+├── icon/
 ├── requirements.txt
 └── README.md
 ```
 
----
+Some directories represent work in progress. Their presence does not necessarily mean the corresponding features are fully implemented.
 
-# 💻 Currently Supported Languages
+## Getting Started
 
-These are the languages we currently provide implementations for. In the future, the framework will support **any language** that users want to add.
+### Prerequisites
 
-| Language | Keylogger | Reverse Shell | Notes |
-|----------|-----------|---------------|-------|
-| **C** | ✅ Complete | 🚧 Planned | Lightweight, fast, minimal dependencies |
-| **C++** | ✅ Complete | 🚧 Planned | Object-oriented, feature-rich |
-| **Assembly** | ✅ Complete | 📝 Planned | Maximum control, smallest binary size |
-| **Python** | 📝 Planned | 📝 Planned | Easy to modify and extend |
-| **Bash** | ❌ N/A | 📝 Planned | For Linux environments |
-| **Any Language** | 💡 Future | 💡 Future | Users can add their own |
+- Python 3.8 or later
+- Git
+- Additional build tools, if required by the component being studied
 
----
+### Installation
 
-# 🔧 How to Use (Original Builder)
-
-## Requirements
-
-| Dependency | Purpose |
-|------------|---------|
-| Python 3.8+ | Interface layer |
-| MinGW (g++) | Compiling C++ payloads |
-| libcurl | HTTP requests for Telegram |
-
-## Installation
-
-```
+```bash
 git clone https://github.com/Arash-abraham/Oscar.git
 cd Oscar
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
-## Run the Builder
+### Run
 
-```
+```bash
 python Oscar.py
 ```
 
-You will be prompted to:
-1. Enter a name for your payload (e.g., "Oscar")
-2. Enter your Telegram Bot Token (from @BotFather)
-3. Enter your Chat ID (from @userinfobot)
-4. Select an icon from the list:
-   - Excel, PDF, Word, VLC
-   - PowerPoint, Counter-Strike
-   - Adobe After Effects, Adobe Photoshop
-   - Anti-Virus
+The available options depend on the current repository version and the components installed in your environment.
 
-**Output:** `dist/<payload_name>.exe`
+## Development Roadmap
 
----
+- [ ] Refine the project structure
+- [ ] Separate interface logic from implementation details
+- [ ] Standardize configuration and module registration
+- [ ] Improve input validation and error handling
+- [ ] Add automated tests
+- [ ] Document supported environments and dependencies
+- [ ] Evaluate cross-platform compatibility
 
-# 🛠️ Manual Build (Current Payloads)
+## Contributing
 
-If you prefer to build manually or want to customize the code:
+Contributions, bug reports, and architectural suggestions are welcome.
 
-## C++ Keylogger
+When reporting an issue, include:
 
-```
-cd Payloads/windows/keylogger/C++
-g++ -o keylogger.exe keylog.cpp -lcurl -lws2_32 -lwinhttp -lcrypt32 -luser32 -ladvapi32 -O2 -mwindows
-```
+- Your operating system and Python version
+- The steps needed to reproduce the issue
+- Relevant error messages
+- The expected and actual behavior
 
-## C Keylogger
+## Disclaimer
 
-```
-cd Payloads/windows/keylogger/C
-gcc -o keylogger.exe keylog.c -lcurl -lws2_32 -lwinhttp -lcrypt32 -luser32 -ladvapi32 -O2 -mwindows -std=c99
-```
+Oscar is intended for educational purposes and authorized security research.
 
-## Assembly Keylogger (NASM)
+Only use the project in environments you own or have explicit permission to assess. Do not use it for unauthorized monitoring, data collection, or access to third-party systems.
 
-```
-cd Payloads/windows/keylogger/Assembly
-nasm -f win32 keylog.asm -o keylog.obj
-gcc -o keylogger.exe keylog.obj -lkernel32 -luser32 -lws2_32
-```
+## About the Name
 
-## Assembly Keylogger (MASM)
-
-```
-cd Payloads/windows/keylogger/Assembly
-ml /c /coff /Cp keylog.asm
-link /SUBSYSTEM:WINDOWS /OUT:keylogger.exe keylog.obj
-```
+The name **Oscar** was inspired by Oscar Isaac and the era in which the project began.
 
 ---
 
-# 🗺️ Roadmap
-
-| Feature | Status | Description |
-|---------|--------|-------------|
-| Modular Builder | 🚧 In Progress | Replace old builder with modular system |
-| Payload Selection | 🚧 In Progress | Choose between keylogger, reverse shell, etc. |
-| Linux Support | 📝 Planned | Linux payloads (reverse shell, keylogger) |
-| macOS Support | 📝 Planned | macOS payloads |
-| Python Payloads | 📝 Planned | Python versions of all payloads |
-| Custom Payload Addition | 📝 Planned | Users add their own payloads in any language |
-| Payload Encryption | 💡 Idea | Encrypt payloads for stealth |
-| Anti-Debugging | 💡 Idea | Anti-debugging and anti-analysis techniques |
-
----
-
-# 🎯 Why "Oscar"?
-
-When development first started, the *Moon Knight* series had just released. Oscar Isaac was everywhere. The name stuck. No deeper meaning than that. Just nostalgia from a different era of coding.
-
----
-
-# 📧 Contact
-
-📧 arashebi777@gmail.com
-
----
-
-<p align="center">
-  <i>Hack responsibly.</i>
-</p>
+\<p align="center">
+&#x20; \<sub>Made for learning, experimentation, and responsible security research.\</sub>
+\</p>
